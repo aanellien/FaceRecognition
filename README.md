@@ -1,5 +1,5 @@
 # FaceRecognition
-A simple face recognition python/flask app 
+A simple face recognition python 2.7/flask app 
 
 Use
 $source/virtual/bin/activate             -- for virtual env
