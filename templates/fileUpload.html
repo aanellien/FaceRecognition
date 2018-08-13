@@ -1,0 +1,26 @@
+<html>
+
+<head>
+      <script type = "text/javascript"
+         src = "{{ url_for('static', filename = 'validateForm.js') }}" ></script>
+</head>
+
+<body>
+{% if train_flag %}
+<form action = "/" method = "POST" onsubmit="return validateForm()" enctype = "multipart/form-data">
+         <input type = "file" name = "file" accept="image/*"/>
+         <input type = "submit"/>
+</form>
+{% if image_flag %}
+<figure>
+    <img src={{image}} alt='missing' />
+    <figcaption>{{name}}</figcaption>
+</figure>
+{% endif %}
+{% else %}
+<h2>
+  No images present  to Train
+</h2>
+{% endif %}
+</body>
+</html>
