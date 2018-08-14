@@ -2,7 +2,7 @@
 A simple face recognition python 2.7/flask app 
 
 Use
-$source /virtual/bin/activate             -- for virtual env in Linux OS
+$source virtual/bin/activate             -- for virtual env in Linux OS
 $python hello.py to run flask server   
 
 Keep training examples in /images folders with name of the person as file name. 
